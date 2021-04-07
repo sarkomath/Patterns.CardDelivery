@@ -29,8 +29,6 @@ public class PlanningTests {
 
     @Test
     void allSuccessTest() {
-        Configuration.timeout = 60000;
-
         $("[placeholder='Город']").setValue(person.getCity()); // Устанавливаем правильный город
         $("[placeholder='Дата встречи']").setValue(getDate(2)); // вводим правильный формат даты
         $("[name='name']").setValue(person.getName()); // ВВодим правильные ИФ
